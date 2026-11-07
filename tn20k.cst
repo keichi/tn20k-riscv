@@ -1,0 +1,26 @@
+// Tang Nano 20K: clock, LEDs, buttons
+// Top module ports: input clk, output [5:0] led, input [1:0] btn
+
+// 27MHz clock
+IO_LOC  "clk" 4;
+IO_PORT "clk" IO_TYPE=LVCMOS33;
+
+// LEDs (active low: 0 = on)
+IO_LOC  "led[0]" 15;
+IO_PORT "led[0]" IO_TYPE=LVCMOS33 DRIVE=8;
+IO_LOC  "led[1]" 16;
+IO_PORT "led[1]" IO_TYPE=LVCMOS33 DRIVE=8;
+IO_LOC  "led[2]" 17;
+IO_PORT "led[2]" IO_TYPE=LVCMOS33 DRIVE=8;
+IO_LOC  "led[3]" 18;
+IO_PORT "led[3]" IO_TYPE=LVCMOS33 DRIVE=8;
+IO_LOC  "led[4]" 19;
+IO_PORT "led[4]" IO_TYPE=LVCMOS33 DRIVE=8;
+IO_LOC  "led[5]" 20;
+IO_PORT "led[5]" IO_TYPE=LVCMOS33 DRIVE=8;
+
+// User buttons (btn[0] = S1, btn[1] = S2)
+// IO_LOC  "btn[0]" 88;
+// IO_PORT "btn[0]" IO_TYPE=LVCMOS33;
+// IO_LOC  "btn[1]" 87;
+// IO_PORT "btn[1]" IO_TYPE=LVCMOS33;
